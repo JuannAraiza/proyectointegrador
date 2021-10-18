@@ -1,8 +1,9 @@
+
 from matplotlib import pyplot as plt
 import numpy as np
 
 def grafico_barras():
-    print("Grafica de Barras")
+    print("Grafica de Casos de COVID en México")
 
     plt.rcdefaults()
 
@@ -159,8 +160,7 @@ def main():
                 print('¡Enhorabuena! no sientes ningún sintoma común del COVID-19') 
                 input('<ENTER>')
         elif x == 3:
-            print("CASOS EN MEXICO")
-            print(grafico_barras())
+            grafico_barras()
 
         elif x == 4:
             print('RECOMENDACIONES PARA EVITAR CONTAGIARSE')
