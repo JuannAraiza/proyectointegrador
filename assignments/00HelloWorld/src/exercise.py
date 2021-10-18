@@ -21,7 +21,7 @@ def main():
             print('Toda la información es brindada por el gobierno de México')
             input('Presiona <ENTER> para continuar')
             print('¿Qué es lo que deseas saber acerca del coronavirus?')
-            print('(1)¿Qué es? (2)¿Cuáles son los sintomas? (3)¿Cuáles son las personas más vulnerables? (4)¿Qué hacer si tengo sintomas?')
+            print('(1)¿Qué es? (2)¿Cuáles son los sintomas? (3)¿Cuáles son las personas más vulnerables? (4)¿Qué hacer si tengo sintomas? (5)Salir')
             l = 0
             while l == 0:
                 n = int(input('Elige una de las opciones (coloca solamente el número): '))
@@ -39,7 +39,7 @@ def main():
                     print('una pandemia a nivel mundial la cual, desafortunadamente a acabado con la vida de millones de personas, y')
                     print('que todavía en la actualidad sigue con un auge muy grande.') 
                     
-                elif n == 4:
+                elif n == 5:
                     l =+1
         elif x == 2:
             print('A continuación se presentará un test rápido de COVID-19!(contesta con si o no) ')
