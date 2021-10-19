@@ -7,6 +7,7 @@ def datos():
     for estado, positivo, muerte  in zip(estados, positivos, muertes):
         print(estado + ', ' + positivo +' ' 'casos confirmados y ' + muerte + ' ' 'muertes')
     input('')
+    
 
 def leer():
     estados = []
@@ -95,19 +96,19 @@ def main():
                     print('es que los sintomas que esta provoca, facilmente pueden ser confundidos por otra enfermedad o cualquier otro mal estar, ')
                     print('ya que dentro de sus principales sintomas se encuentran:')
                     input('')
-                    print('1.- tos')
+                    print('1.- Tos')
                     input('')
-                    print('2.- fiebre')
+                    print('2.- Fiebre')
                     input('')
-                    print('3.- dolores de cabeza')
+                    print('3.- Dolores de cabeza')
                     input('')
-                    print('4.- dolor en los ojos')
+                    print('4.- Dolor en los ojos')
                     input('')
-                    print('5.- dolor en la garganta')
+                    print('5.- Dolor en la garganta')
                     input('')
-                    print('6.- dificultad para respirar')
+                    print('6.- Dificultad para respirar')
                     input('')
-                    print('7.- perdida de sentidos como el olfato y el gusto')
+                    print('7.- Perdida de sentidos como el olfato y el gusto')
                     input('')
                     print('Además que se ha ido descubriendo que puede provocar otros sintomas adicionales poco comunes, como por ejemplo,')
                     print('dolores de estomago, vomitos y cuerpo cortado. ')
@@ -182,6 +183,10 @@ def main():
         elif x == 3:
             grafico_barras()
             datos()
+            pp = 2769289 // 32
+            pm = 230728 // 32
+            print(f'El promedio a nivel nacional de casos positivos en es de: {pp}')
+            print(f'El promedio de muertes a nivel nacional es de: {pm}')
 
         elif x == 4:
             print('RECOMENDACIONES PARA EVITAR CONTAGIARSE')
