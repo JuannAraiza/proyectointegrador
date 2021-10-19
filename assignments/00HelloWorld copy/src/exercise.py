@@ -1,9 +1,29 @@
 
 from matplotlib import pyplot as plt
 import numpy as np
+def datos():
+    estados, positivos, muertes = leer()
+
+    for estado, positivo, muerte  in zip(estados, positivos, muertes):
+        print(estado + ', ' + positivo +' ' 'casos confirmados y ' + muerte + ' ' 'muertes')
+    input('')
+
+def leer():
+    estados = []
+    positivos = []
+    muertes = []
+
+    with open('assignments/00HelloWorld copy/src/data/covid.csv', 'r') as f:
+        for line in f:
+            lista_line = line.split(',')
+
+            estados.append(lista_line[0])
+            positivos.append(lista_line[1])
+            muertes.append(lista_line[2])
+    return estados, positivos, muertes 
 
 def grafico_barras():
-    print("Grafica de Casos de COVID en México")
+    print("CASOS DE COVID EN MÉXICO")
 
     plt.rcdefaults()
 
@@ -161,6 +181,7 @@ def main():
                 input('<ENTER>')
         elif x == 3:
             grafico_barras()
+            datos()
 
         elif x == 4:
             print('RECOMENDACIONES PARA EVITAR CONTAGIARSE')
