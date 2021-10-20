@@ -1,6 +1,7 @@
 
 from matplotlib import pyplot as plt
 import numpy as np
+#Función para imprimir datos del archivo
 def datos():
     estados, positivos, muertes = leer()
 
@@ -8,7 +9,7 @@ def datos():
         print(estado + ', ' + positivo +' ' 'casos confirmados y ' + muerte + ' ' 'muertes')
     input('')
     
-
+#Función para leer datos del archivo
 def leer():
     estados = []
     positivos = []
@@ -22,7 +23,7 @@ def leer():
             positivos.append(lista_line[1])
             muertes.append(lista_line[2])
     return estados, positivos, muertes 
-
+#Función de la gráfica
 def grafico_barras():
     print("CASOS DE COVID EN MÉXICO")
 
@@ -183,10 +184,12 @@ def main():
         elif x == 3:
             grafico_barras()
             datos()
-            pp = 2769289 // 32
-            pm = 230728 // 32
-            print(f'El promedio a nivel nacional de casos positivos en es de: {pp}')
+            pp = 3726718 // 32
+            pm = 243030 // 32
+            print(f'El promedio a nivel nacional de casos positivos es de: {pp}')
+            input('')
             print(f'El promedio de muertes a nivel nacional es de: {pm}')
+            input('')
 
         elif x == 4:
             print('RECOMENDACIONES PARA EVITAR CONTAGIARSE')
